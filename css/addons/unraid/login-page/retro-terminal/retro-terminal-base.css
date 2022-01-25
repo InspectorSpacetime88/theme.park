@@ -303,8 +303,8 @@ logo.angle {
 .custom-text-header:after {
     content: "";
     position: absolute;
-    top: 150px;
-    right: -100px;
+    top: 165px;
+    right: -5px;
     background-color: var(--custom-text-header);
     vertical-align: top;
     width: 20px;
