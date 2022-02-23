@@ -404,7 +404,7 @@ a:hover {
     color: #eee;
 }
 
-@supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
+/* @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
     [class*="Tooltip-tooltip-"][class*="Tooltip-inverse-"],
     [class*="Popover-title-"],
     [class*="Popover-body-"],
@@ -419,7 +419,7 @@ a:hover {
     [class*="SeasonInfo-title-"] {
         background: transparent;
     }
-}
+} */
 
 [class*="Tooltip-top-"][class*="Tooltip-inverse-"] {
     border-top-color: var(--text);
@@ -941,11 +941,11 @@ input:focus:-ms-input-placeholder {
 }
 
 [class*="CalendarEventGroup-airTime-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 [class*="CalendarEventGroup-episodeInfo-"] {
-    color: var(--text);
+    color: #fff;
 }
 
 /* calendar agenda */

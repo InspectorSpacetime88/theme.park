@@ -61,6 +61,17 @@
     color: var(--text);
 }
 
+#HEALTHCHECKS-settings-items [id*="Services"] .row.m-b-40 {
+    background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
 .h1,
 .h2,
 .h3,
@@ -118,23 +129,23 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-hover) !important;
+    color: var(--text-hover) !important; 
 }
 
-.badge {
+.badge:not(.homepage-drag .badge) {
     background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
 .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 2px transparent);
-    filter: drop-shadow(0 0 2px transparent);
+    -webkit-filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 5px rgb(var(--accent-color)));
     color: var(--text-hover)
 }
 
 .active .tabLoaded {
-    -webkit-filter: drop-shadow(0 0 5px transparent);
-    filter: drop-shadow(0 0 5px transparent);
+    -webkit-filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
+    filter: drop-shadow(0 0 2px rgb(var(--accent-color)));
     color: rgb(var(--accent-color));
 }
 
@@ -158,18 +169,18 @@ h6 {
 
 .btn:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton {
-    background: var(--button-color) !important;
-    border-color: var(--button-color) !important;
-    color: var(--button-text) !important;
+    background: var(--button-color);
+    border-color: var(--button-color);
+    color: var(--button-text);
 }
 
 .btn:hover:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:active:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .btn:focus:not(.btn-danger):not(.bg-plex):not(.btn-youtube):not(.btn-info.btn-circle):not(.btn-success),
 .cbutton:hover {
-    background: var(--button-color-hover) !important;
-    border-color: var(--button-color-hover) !important;
-    color: var(--button-text-hover) !important;
+    background: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+    color: var(--button-text-hover);
 }
 
 .cbutton {
@@ -1470,7 +1481,7 @@ a:hover,
     border-radius: 3px;
 }
 
-.bg-inverse {
+.bg-inverse:not(.homepage-drag):not(.pihole-stat) {
     background: transparent !important;
 }
 
@@ -1761,25 +1772,11 @@ background: rgb(0 0 0 / 0%) !important;
 }
  .navbar-default,
 .sidebar .sidebar-head {
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: rgb(0 0 0 / 0%);
 } 
 
 .sidebar  {
-    background: var(--main-bg-color);
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    background-position: center center, center center;
-    background-size: auto, cover;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
+    background: rgb(0 0 0 / 25%);
     box-shadow: 1px 0px 20px rgb(0 0 0 / 20%);
 
 }
